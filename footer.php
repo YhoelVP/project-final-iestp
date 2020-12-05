@@ -23,11 +23,5 @@
             </div>
         </div>
     </footer>
-    <!-- Jquery -->
-    <script src="assets/bootstrap/js/jquery.min.js"></script>
-    <!-- Popper.js -->
-    <script src="assets/bootstrap/js/popper.min.js"></script>
-    <!-- Bootstrap.js -->
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

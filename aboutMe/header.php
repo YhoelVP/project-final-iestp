@@ -22,7 +22,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="../index.php"><h3>TIENDA</h3></a>
+                <a class="navbar-brand" href="index.php"><h3>TIENDA</h3></a>
                 <button 
                     class="navbar-toggler" 
                     type="button" 
@@ -34,7 +34,7 @@
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse move-rigt" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link font-weight-bold" href="../index.php">
                             <svg
@@ -77,7 +77,7 @@
                             </svg>
                             Agregar productos
                         </a>
-                        <a class="nav-link font-weight-bold active" href="shoppingCart.php">
+                        <a class="nav-link font-weight-bold" href="../shoppingCart/shoppingCart.php">
                             <svg
                                 class="mr-1"
                                 width="1em" 
@@ -94,7 +94,7 @@
                             </svg>
                             Carrito de compras
                         </a>
-                        <a class="nav-link font-weight-bold" href="../aboutMe/aboutMe.php">
+                        <a class="nav-link font-weight-bold active" href="aboutMe.php">
                             <svg 
                                 width="1em" 
                                 height="1em" 
@@ -123,3 +123,7 @@
             </div>
         </nav>
     </header>
+
+
+
+    <?php //include_once('footer.php') ?>
