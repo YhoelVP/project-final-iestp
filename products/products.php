@@ -1,10 +1,17 @@
 <?php
     include_once('header.php'); // Incluimos un archivo donde esta la libreria de Bootstrap y el componente NAV de toda la página
-    include_once('models/conexion.php'); // Incluimos la conexion a la base de datos de donde extraeremos los datos
+    include_once('../models/conexion.php'); // Incluimos la conexion a la base de datos de donde extraeremos los datos
 
     // Hacemos una consulta o listado de todos los datos que hay en la BD
-    $sentListar = $pdo->prepare('SELECT * FROM celulares');
-    $sentListar->execute(); // Ejecutamos la sentencia
+    $sentListar = $pdo->prepare('SELECT id, modelo, marca, precio, imagen FROM celulares'); // Ejecutamos la sentencia
+    $sentListar->execute();
+
+    // Hacemos una sentencia para eliminar los productos
+    $sentDelete = $pdo->prepare('DELETE FROM celulares WHERE id = :uid');
+    $sentDelete->bindParam('uid', $_GET['del_id']);
+    $sentDelete->execute();
+    // header('Location: products.php');
+    
 ?>
 
 <div class="container">
@@ -19,14 +26,14 @@
                     </div>
                     <div class="card-body">
                         <div class="imagen-card-cel">
-                            <img src="imagenes/<?php echo $telefono['imagen']; ?>" alt="" class="card-img-top">
-                            <!-- <img src="assets/img/<?php  ?>.jpg" alt="" class="card-img-top"> -->
+                            <img src="../imagenes/<?php echo $telefono['imagen']; ?>" alt="" class="card-img-top">
                         </div>
                         <h5 class="card-title mt-3"><?php echo $telefono['modelo']; ?></h5>
                         <p class="card-text text-muted">S/. <?php echo $telefono['precio']; ?></p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-success btn-block">Añadir al carrito</a>
+                        <a href="editProduct.php?edit=<?php echo $telefono['id']; ?>" class="btn btn-info btn-block">Editar producto</a>
+                        <a href="?del_id=<?php echo $telefono['id']; ?>" class="btn btn-danger btn-block">Eliminar producto</a>
                     </div>
                 </div>
             </div>

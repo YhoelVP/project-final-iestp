@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 
     <!-- Estilos propios -->
-    <link rel="stylesheet" href="assets/styles/main.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/styles/main.css"> -->
 
     <!-- Jquery -->
     <script src="assets/bootstrap/js/jquery.min.js"></script>
@@ -77,7 +77,7 @@
                             </svg>
                             Agregar productos
                         </a>
-                        <a class="nav-link font-weight-bold" href="shoppingCart/shoppingCart.php">
+                        <a class="nav-link font-weight-bold" href="products/products.php">
                             <svg
                                 class="mr-1"
                                 width="1em" 
@@ -92,9 +92,9 @@
                                     d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
                                 />
                             </svg>
-                            Carrito de compras
+                            Productos
                         </a>
-                        <a class="nav-link font-weight-bold" href="aboutMe/aboutMe.php">
+                        <a class="nav-link font-weight-bold" href="aboutUs/aboutUs.php">
                             <svg 
                                 width="1em" 
                                 height="1em" 
@@ -116,7 +116,7 @@
                                     r="1"
                                 />
                             </svg>
-                            Acerca de
+                            Acerca de nosotros
                         </a>
                     </div>
                 </div>

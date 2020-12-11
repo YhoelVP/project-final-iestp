@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row mt-2">
         <div class="col-6 m-auto">
-            <form action="productsScript.php" method="POST" class="bg-transparent">
+            <form action="productsScript.php" method="POST" class="bg-transparent" enctype="multipart/form-data">
                 <h2 class="pt-2 text-center text-uppercase">Agrega un nuevo producto</h2>
                 <hr>
                 <div class="form-group">
@@ -13,6 +13,7 @@
                         name="modelPhone"
                         class="form-control"
                         autocomplete="off"
+                        required=" "
                     >
                 </div>
                 <div class="form-group">
@@ -22,6 +23,7 @@
                         name="brandPhone"
                         class="form-control"
                         autocomplete="off"
+                        required=" "
                     >
                 </div>
                 <div class="form-group">
@@ -31,6 +33,7 @@
                         name="pricePhone"
                         class="form-control"
                         autocomplete="off"
+                        required=" "
                     >
                 </div>
                 <div class="form-group">
@@ -39,14 +42,26 @@
                         type="file" 
                         name="imagePhone"
                         class="form-control-file"
+                        autocomplete="off"
+                        required=" "
+                        accept="image/*"
                     >
                 </div>
-                <button class="btn btn-outline-primary btn-block mt-3 mb-4">
+                <div class="form-group">
+                    <input 
+                        type="submit" 
+                        value="Agregar nuevo producto"
+                        name="addProduct"
+                        class="btn btn-outline-primary btn-block mt-3 mb-4"
+                    >
+                </div>
+                <!-- <button 
+                    class="btn btn-outline-primary btn-block mt-3 mb-4" 
+                    name="addProduct"
+                >
                     Agregar producto
-                </button>
+                </button> -->
             </form>
         </div>
     </div>
 </div>
-
-<?php //include_once('footer.php'); ?>
