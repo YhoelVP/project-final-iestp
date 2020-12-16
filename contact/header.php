@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
 
     <!-- Estilos propios -->
-    <link rel="stylesheet" href="../assets/styles/main.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/styles/main.css"> -->
 
     <!-- Jquery -->
     <script src="../assets/bootstrap/js/jquery.min.js"></script>
@@ -22,7 +22,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="index.php">
+                <a class="navbar-brand" href="../index.php">
                     <h3 text-weight-bold>MOVIL TECH</h3>
                 </a>
                 <button 
@@ -36,7 +36,7 @@
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse move-rigt" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link font-weight-bold" href="../index.php">
                             <svg
@@ -96,9 +96,10 @@
                             </svg>
                             Productos
                         </a>
+                        
                         <a 
-                            class="nav-link font-weight-bold"
-                            href="../contact/contact.php"
+                            class="nav-link font-weight-bold active"
+                            href="contact.php"
                         >
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
@@ -118,7 +119,8 @@
                             </svg>
                             Contactanos
                         </a>
-                        <a class="nav-link font-weight-bold active" href="aboutUs.php">
+
+                        <a class="nav-link font-weight-bold" href="../aboutUs/aboutUs.php">
                             <svg 
                                 width="1em" 
                                 height="1em" 
@@ -142,12 +144,9 @@
                             </svg>
                             Acerca de nosotros
                         </a>
+                        
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-
-
-
-    <?php //include_once('footer.php') ?>
